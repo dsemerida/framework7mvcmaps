@@ -25,20 +25,8 @@ define('app', ['scripts/router', 'scripts/utils',"scripts/templateController"], 
     function ui(options){
 
         var us=  jQuery.parseJSON(localStorage.getItem("context_cn"));
-        $.ajax({
-                method: "POST",
-                url: urlServer + "profile/getus?g=" + us.Token,
-                success: function (userserver) {
-                    user=userserver;
-                    //localStorage.setItem("context_cn",JSON.stringify(user));
-                    //console.log("GET US SERVER "+JSON.stringify(user));
-                    loaduicomponents(options);
-                },
-                error: function (error) {
-                   
-                }
-        });
        
+     
     }
 
     

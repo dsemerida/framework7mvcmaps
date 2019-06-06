@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-HeavyItalic.woff2') format('woff2'),
+        url('SoinSansNeue-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-HairlineItalic.woff2') format('woff2'),
+        url('SoinSansNeue-HairlineItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-Heavy.woff2') format('woff2'),
+        url('SoinSansNeue-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-Italic.woff2') format('woff2'),
+        url('SoinSansNeue-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-BlackItalic.woff2') format('woff2'),
+        url('SoinSansNeue-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-Light.woff2') format('woff2'),
+        url('SoinSansNeue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-Hairline.woff2') format('woff2'),
+        url('SoinSansNeue-Hairline.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-Roman.woff2') format('woff2'),
+        url('SoinSansNeue-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-LightItalic.woff2') format('woff2'),
+        url('SoinSansNeue-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-Thin.woff2') format('woff2'),
+        url('SoinSansNeue-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-BoldItalic.woff2') format('woff2'),
+        url('SoinSansNeue-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-ExtraLightItalic.woff2') format('woff2'),
+        url('SoinSansNeue-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-Bold.woff2') format('woff2'),
+        url('SoinSansNeue-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-Medium.woff2') format('woff2'),
+        url('SoinSansNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-MediumItalic.woff2') format('woff2'),
+        url('SoinSansNeue-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-ThinItalic.woff2') format('woff2'),
+        url('SoinSansNeue-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-Black.woff2') format('woff2'),
+        url('SoinSansNeue-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Soin Sans Neue';
+    src: url('SoinSansNeue-ExtraLight.woff2') format('woff2'),
+        url('SoinSansNeue-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+

@@ -1,0 +1,22 @@
+
+Detalle de Versiones
+
+
+02/07/2018
+
+-- REQUERIMIENTOS TUSOL
+
+	-- Android 5.0 o posterior
+	-- Red de datos 3G,4G o Wifi
+	-- Activar GPS
+	-- Desinstalar algun antivirus o el CCleaner antes de instalar la aplicación.
+	-- Actualizar aplicación cuando lo requiera.
+
+
+--- Versión 1.0.7
+
+	-- Ver detalle del viaje con información del operador en pantalla del cliente
+	-- Precisión del mapa en pantallas de cliente y operador
+	-- Move map en la pantalla de operador, para no perder referencia del marcador.
+	-- Precisión en carga de ubicación del operador en mapa del cliente, aplica cuando este por iniciar un viaje.
+	

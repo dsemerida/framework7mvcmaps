@@ -1,84 +1,238 @@
 <!DOCTYPE html>
-<html class="with-statusbar-overlay">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<title>F7 MVC</title>
-		<link rel="stylesheet" href="lib/css/framework7.css">
-		<link rel="stylesheet" href="lib/css/ionicons.css">
-		<link rel="stylesheet" href="css/app.css">
-		<link href="img/favicon.png" rel="shortcut icon">
-	</head>
-	<style type="text/css">
-		.googlemaps {
-            height: 600px;
-            width: 400px;
+<html class="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="img-src * data: 'unsafe-inline';default-src *; style-src 'self' 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval';connect-src *">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=5, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>maps</title>
+    <meta name="theme-color" content="#2196f3">
+    <link rel="stylesheet" href="css/fontawesomenew.css">
+    <link href="css/framework7-icons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/framework7.material.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.css">
+
+    <!-- <link href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/input.css">
+    <style type="text/css">
+        .no-list ul {
+            list-style: none;
+        }
+
+       .googlemaps {
+            height: 100%;
+            width: 100%;
             position: absolute;
             top: 0;
             left: 0;
-            z-index: 9998;
+            z-index: 5001;
             /* Set z-index to 0 as it will be on a layer below the contact form */
         }
-   
-	</style>
-	<body>
-	<!-- Statusbar overlay-->
-	<div class="statusbar-overlay"></div>
-    <!-- Panels Overlay -->
-    <div class="panel-overlay"></div>
-    <!-- Left Panel with Reveal effect -->
-    <div class="panel panel-left panel-reveal">
-        <div class="list-block">
-			<div class="list-group">
-				<ul>
-					<li class="item-content list-panel-all close-panel item-link">
-						<div class="item-media"><i class="icon ion-ios7-paper"></i></div>
-						<div class="item-inner">
-							<div class="item-title">All Contacts</div>
-						</div>
-					</li>
-					<li class="item-content list-panel-favorites close-panel item-link">
-						<div class="item-media"><i class="icon ion-ios7-star"></i></div>
-						<div class="item-inner">
-							<div class="item-title">Favorites</div>
-						</div>
-					</li>
-				</ul>
-			</div>
+
+        .page-on-left {
+            opacity: 0.9;
+            -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+            -webkit-transform: translate3d(-100%, 0, 0);
+            -ms-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            display: none;
+        }
+
+       
+    </style>
+
+</head>
+<body style="overflow: none;">
+
+    <!-- slidepanel-->
+    <div class="panel-overlay width100"></div>
+    <div class="panel panel-left panel-cover" style="width: 70%; position: absolute; z-index: 333333">
+        <div data-page="panel-left" class="page" style="background: #fff; overflow: hidden;">
+            <div class="" style="background: #619fca; vertical-align: middle; margin-bottom: 70px;">
+
+                <div class="width100 borderShadow" style="font-size: 12px; overflow: hidden; padding-top: 20px; padding-bottom: 20px;">
+                    <div class="right" style="width: 100%;">
+
+                        <span class="badge color-red" style="margin-right: -3px;">Nivel 1 <i class="fa fa-star" aria-hidden="true"></i></span>
+
+                        <!-- <div class="centro"> -->
+                        <div class="centro" style="width: 76px; height: 76px; background: rgba(255, 255, 255, .1); border-radius: 50%">
+                            <img class="imgprofile" src="img/perfile2.png" style="width: 70px; height: 70px; border-radius: 50%; margin: 3px;">
+                        </div>
+                        <!-- </div> -->
+                    </div>
+
+                    <div class="" style="vertical-align: middle; width: 100%;">
+                        <div class="titleProfile left capitalize centro" style="color: #fff;">
+                            CARGANDO...
+                        </div>
+                    </div>
+
+                    <!-- <div class="right" style="color: #fff; padding-top: 8px;">
+                                            <i class="fa fa-star centro" aria-hidden="true"></i>  
+                                            <span class="centro" id="ratingN">0</span>
+                                          </div> -->
+                </div>
+            </div>
+
+            <div class="menucontent">
+            </div>
+            <div class="centro width100" style="position: absolute; bottom: 50px; text-align: right!important;">
+
+                <span id="msjversion" style="color: #777070; padding-right: 10px">v1.0.12</span>
+            </div>
+            <div class="centro width100" style="position: absolute; bottom: 0px;">
+
+                <div class="width100" style="padding-top: 5%;">
+                    <a style="height: 50px; padding-top: 7px; padding-bottom: 10px; font-size: 20px; border-top: #619fca; background: transparent; color: #000;" class="button button-fill button-raised sign-out width100 capitalize noRadius borderShadow">Cerrar Sesión</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- side panel!-->
+
+    <!-- Views-->
+    <div class="views">
+        <div class="view view-main">
+            <div class="pages">
+                <div data-page="home" class="page homediv">
+                    <div class="page-content login-screen-content centro center" style="height: 100%;padding-top: 200px">
+                        <!--<div class="login-screen-title" style="padding-top: 15%; font-weight: bolder;">Clean My Ride</div>-->
+                       
+                        <!-- Login form -->
+                        <form style="">
+                            <div class="list-block">
+                                <ul>
+                                    
+                                    <li>
+                                        <div style="width: 80%; margin: 0 auto;">
+                                            <a href="pages/maphard.html" class="item-link list-button signin" style="margin: 0 auto; text-align: center; border-radius: 5px; background: #0090C6; color: #fff;">GO MAP</a>
+                                        </div>
+                                    </li>
+                                     <li>
+                                        <p>For see the map, clic button and onpause the app and fireground again for see on resume</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                           
+
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Views-->
-	<div class="views">
-		<div class="view view-main navbar-fixed">
-			<div class="navbar theme-white">
-				<div class="navbar-inner">
-                    <div class="left">
-                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-                    </div>
-                    <div class="center sliding contacts-list-header">Contacts</div>
-                    <div class="right">
-                        <a href="harmap.html" class="link icon-only"><i class="icon icon-plus">+</i></a>
-                    </div>
-				</div>
-			</div>
-			<div class="pages">
-				<div data-page="list" class="page">
-			
 
-                    <div class="page-content">
-                       	<div style="background: gray;height: 200px;text-align: center;color:white;padding-top: 100px">
-                       		<a class="color-white" href="harmap.html">GOOO MAP</a>
-                       	</div>
-                    </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</body>
+    
+
+
+        <!--TERMINA POPS REG USUARIO!-->
+</body>
 </html>
-<script type="text/javascript" src="lib/lodash.js"></script>
+<script type="text/javascript">
+  var mapStyle = [
+    {
+        "featureType": "all",
+        "stylers": [
+            {
+                "saturation": 0
+            },
+            {
+                "hue": "#e7ecf0"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "stylers": [
+            {
+                "saturation": -70
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": -60
+            }
+        ]
+    }
+];
+var urlServer="";
+
+  var urlthings="";
+
+  document.addEventListener('deviceready', function(){
+
+}, false);
+</script>
+<script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="lib/framework7.js"></script>
-<script  src="cordova.js"></script>
+<script type="text/javascript" src="lib/cardio.js"></script>
+<script type="text/javascript" src="lib/lodash.js"></script>
+<script type="text/javascript" src="lib/jquery.barrating.min.js"></script>
+<script src="cordova.js"></script>
 <script data-main="app" src="lib/require.js"></script>
+
+<script type="text/javascript">
+</script>
+
+<script>
+  function textChange(control1, control2, control3) {
+    
+    var texto = document.getElementById(control1);
+    var label = document.getElementById(control2);
+    var lblError = document.getElementById(control3);
+
+    if (texto.value.length > 0)
+    {
+     $(label).show();
+     $(lblError).hide();
+    } else {
+      $(label).hide();
+    }
+
+  };
+
+  function textClean(control1, control2) {
+    
+    var texto = document.getElementById(control1);
+    var label = document.getElementById(control2);
+
+    texto.value = '';
+    $(label).hide();
+
+  };
+
+
+
+</script>

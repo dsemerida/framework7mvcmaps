@@ -1,0 +1,195 @@
+.input::-webkit-input-placeholder, {
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+.input {
+  /*margin: 40px 25px;*/
+  /*letter-spacing: 0.20em !important;*/
+  width: 100% !important;
+  margin: 0 auto !important;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #0090C6 !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+          transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #0090C6 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #0090C6 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #000 !important;
+}
+.input:focus, .input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+.input:focus::-webkit-input-placeholder, .input:valid::-webkit-input-placeholder {
+  color: #0090C6 !important;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
+
+.field-icon {
+  float: right;
+  /*margin-left: -25px;*/
+  margin-right: 3px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 1000;
+  color: #0090C6;
+  font-size: 16px;
+}
+
+.shake {
+      -webkit-animation: kf_shake 0.4s 1 linear;
+      -moz-animation: kf_shake 0.4s 1 linear;
+      -o-animation: kf_shake 0.4s 1 linear;
+    }
+    @-webkit-keyframes kf_shake {
+      0% { -webkit-transform: translate(30px); }
+      20% { -webkit-transform: translate(-30px); }
+      40% { -webkit-transform: translate(15px); }
+      60% { -webkit-transform: translate(-15px); }
+      80% { -webkit-transform: translate(8px); }
+      100% { -webkit-transform: translate(0px); }
+    }
+    @-moz-keyframes kf_shake {
+      0% { -moz-transform: translate(30px); }
+      20% { -moz-transform: translate(-30px); }
+      40% { -moz-transform: translate(15px); }
+      60% { -moz-transform: translate(-15px); }
+      80% { -moz-transform: translate(8px); }
+      100% { -moz-transform: translate(0px); }
+    }
+    @-o-keyframes kf_shake {
+      0% { -o-transform: translate(30px); }
+      20% { -o-transform: translate(-30px); }
+      40% { -o-transform: translate(15px); }
+      60% { -o-transform: translate(-15px); }
+      80% { -o-transform: translate(8px); }
+      100% { -o-origin-transform: translate(0px); }
+    }
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  /*top:5px;
+  left:10px;*/
+  background-color: transparent;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  /*box-shadow: 2px 2px 3px #999;*/
+}
+
+.float:hover{ 
+  background-color: #F0F0F0;
+}
+
+.my-float{
+  margin-top:18px;
+  color: #0090C6;
+}
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  /*top:5px;
+  left:10px;*/
+  background-color: transparent;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  /*box-shadow: 2px 2px 3px #999;*/
+}
+
+.float:hover{ 
+  background-color: #F0F0F0;
+}
+
+.my-float{
+  margin-top:18px;
+  color: #0090C6;
+}
+
+.floatMain{
+  position: fixed;
+  width:60px;
+  height:60px;
+  border-radius:50px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5); 
+  /*box-shadow: 2px 2px 3px #999;*/
+}
+
+.my-floatMain{
+  margin-top:20px;
+  color: #0090C6;
+}
+
+.btn{ 
+  border: none; 
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: .5rem;
+  position: relative;
+  transform: rotateZ(360deg);
+  transition: all .2s ease;
+  overflow: hidden;
+}
+
+.btn-blue{ 
+  border: none; 
+  background-color: #619fca;
+  margin: .5rem;
+  position: relative;
+  transform: rotateZ(360deg);
+  transition: all .2s ease;
+  overflow: hidden;
+}
+
+.btn-circle{
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px; 
+  box-shadow: 1px 1px 2px #999;
+  color: #619fca;
+  font-size: 18px;
+}
+
+.btn-circle-blue{
+  border-radius: 0%;
+  width: 50px; 
+  height: 50px; 
+  color: #fff;
+  font-size: 18px;
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  background: transparent;
+}
+.slide {
+  width: 100%;
+  height: 15%;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.slides > div:target {
+  transform: scale(0.8);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
